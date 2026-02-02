@@ -68,6 +68,15 @@ FetchContent_Declare(
 )
 add_subdirectory("PolyHook_2_0")
 
+# Safetyhook
+FetchContent_Declare(
+    safetyhook
+    GIT_REPOSITORY "https://github.com/cursey/safetyhook.git"
+    GIT_TAG 755a4a08aa7d0d7143331dc854235ebc2d1570f9
+    GIT_PROGRESS ON
+)
+add_subdirectory("safetyhook")
+
 # raw_pdb
 FetchContent_Declare(
     raw_pdb
