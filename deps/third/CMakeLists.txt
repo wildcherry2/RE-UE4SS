@@ -77,6 +77,15 @@ FetchContent_Declare(
 )
 add_subdirectory("safetyhook")
 
+#asmjit
+FetchContent_Declare(
+    asmjit
+    GIT_REPOSITORY "https://github.com/asmjit/asmjit.git"
+    GIT_TAG f64c90818ff2ef87ec4f73f44d0a7e73fbff3229
+    GIT_PROGRESS ON
+)
+add_subdirectory("asmjit")
+
 # raw_pdb
 FetchContent_Declare(
     raw_pdb
